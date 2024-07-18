@@ -21,12 +21,14 @@ mindmaps.CanvasContainer = function () {
      */
     this.setSize = function () {
         var windowHeight = $(window).height();
+//        var windowHeight = "20000";
         var headerHeight = $("#topbar").outerHeight(true);
         var footerHeight = $("#bottombar").outerHeight(true);
         var height = windowHeight - headerHeight - footerHeight;
         $content.height(height);
 
         var size = new mindmaps.Point($content.width(), height);
+//        var size = new mindmaps.Point($content.width(), height);
         self.publish(mindmaps.CanvasContainer.Event.RESIZED, size);
     };
 

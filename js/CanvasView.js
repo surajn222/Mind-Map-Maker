@@ -32,6 +32,8 @@ mindmaps.CanvasView = function() {
         var a = this.$getDrawingArea();
         var f = a.width();
         var l = a.height();
+//        var f = 10000; Suraj #TODO
+//        var l = a.height();
         a.width(f * e).height(l * e);
         this.scroll(n, r);
         var c = parseFloat(a.css("background-size"));

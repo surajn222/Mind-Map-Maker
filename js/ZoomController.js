@@ -1,8 +1,8 @@
 mindmaps.ZoomController = function(e, t) {
     var n = this;
-    this.ZOOM_STEP = .25;
+    this.ZOOM_STEP = .1;
     this.MAX_ZOOM = 3;
-    this.MIN_ZOOM = .25;
+    this.MIN_ZOOM = .1;
     this.DEFAULT_ZOOM = 1;
     this.zoomFactor = this.DEFAULT_ZOOM;
     this.zoomTo = function(t) {
